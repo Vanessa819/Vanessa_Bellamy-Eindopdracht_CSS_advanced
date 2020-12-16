@@ -1,0 +1,27 @@
+$color-gray: #c9c9c9;
+$color-red: #e17b77;
+$color-light-blue: #00aced;
+$color-blue: #007bb6;
+$color-dark-blue: #3b5998;
+$color-black: #333;
+$color-white: #fff;
+
+@mixin text1 {
+  list-style-type: none;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 30px;
+}
+@mixin text2 {
+  display: block;
+  width: 250px;
+  position: relative;
+  right: -180px;
+  transition: right 0.3s ease-in-out;
+}
+@mixin text3 {
+  padding: 20px;
+  font-size: 2em;
+  display: inline-block;
+}

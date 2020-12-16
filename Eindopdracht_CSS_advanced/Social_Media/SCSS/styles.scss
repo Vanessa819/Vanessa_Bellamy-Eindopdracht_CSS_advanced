@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "./variables.scss";
+
+body {
+  background-color: $color-gray;
+  font-family: "Lato";
+}
+.socialmedia {
+  @include text1;
+  &__li {
+    @include text2;
+    &__:hover {
+      right: 0;
+      &__i {
+        @include text3;
+        &__a {
+          color: $color-white;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  &__blog {
+    background-color: $color-red;
+    color: $color-white;
+  }
+  &__twitter {
+    background-color: $color-light-blue;
+    color: $color-white;
+  }
+  &__linkedin {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+  &__facebook {
+    background-color: $color-dark-blue;
+    color: $color-white;
+  }
+  &__github {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,46 @@
+//Variables
+$color-blue: rgb(0, 0, 255);
+$color-beige: rgb(245, 245, 220);
+$color-darkblue: rgb(0, 0, 139);
+$color-grey: #c3cfe2;
+$margin-standard: auto;
+
+@mixin important-text {
+  margin: 5px;
+  float: left;
+}
+
+@mixin standard-text {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: none;
+}
+@mixin standard-test1 {
+  opacity: 0;
+  transition: 100ms ease-in;
+}
+@mixin standard-test2 {
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+}
+@mixin standard-test3 {
+  top: 40%;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 16px 20px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 8px;
+  opacity: 0;
+  position: absolute;
+  background-color: beige;
+  color: darkblue;
+  cursor: pointer;
+  transform: translate(-200px);
+}

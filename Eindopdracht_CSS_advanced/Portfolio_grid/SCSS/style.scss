@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: $color-grey;
+}
+.wrapper {
+  max-width: 740px;
+  margin: $margin-standard;
+}
+.portfolio {
+  @include important-text;
+  background-color: $color-blue;
+  @include standard-text;
+  &__img {
+    @include standard-text;
+  }
+  &__:hover.__img {
+    @include standard-test1;
+  }
+  &__img:hover + .button {
+    @include standard-test2;
+  }
+}
+.button {
+  @include standard-test3;
+  &__:hover {
+    @include standard-test2;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio.portfolio__img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .portfolio.portfolio_img {
+    width: 100%;
+  }
+}

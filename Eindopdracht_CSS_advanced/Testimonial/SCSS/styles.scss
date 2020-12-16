@@ -1,0 +1,63 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $color-gray;
+  @include standard-text();
+  min-height: 100vh;
+  padding: $padding-standard;
+}
+.testimonial-wrapper {
+  display: flex;
+  max-width: 900px;
+}
+.testimonial {
+  background-color: $color-white;
+  width: 450px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 10px 15px $color-dark-grey;
+
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  border: 0px solid $color-black;
+  &__text {
+    padding: 30px 20px 40px 20px;
+    height: 350px;
+    text-align: center;
+  }
+  &__footer {
+    background-color: $color-blue;
+    width: 450px;
+    min-height: 200px;
+
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    &__img {
+      position: fixed;
+      margin-top: -75px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      display: block;
+      margin-left: 150px;
+      &__p {
+        color: $color-white;
+        margin: 10px 20px;
+        padding-top: 80px;
+        &__p2 {
+          color: $color-gray;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

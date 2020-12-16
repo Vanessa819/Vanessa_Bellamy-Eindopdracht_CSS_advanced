@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Scheherazade", serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+.testimonial-wrapper {
+  display: flex;
+  max-width: 900px;
+}
+.testimonial {
+  background-color: #fff;
+  width: 450px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 10px 15px #555;
+
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  border: 0px solid #000000;
+}
+.testimonial__text {
+  padding: 30px 20px 40px 20px;
+  height: 350px;
+  text-align: center;
+}
+.testimonial__footer {
+  background-color: #686de0;
+  width: 450px;
+  min-height: 200px;
+
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.testimonial__footer img {
+  position: fixed;
+  margin-top: -75px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: block;
+  margin-left: 150px;
+}
+.testimonial__footer p {
+  color: #fff;
+  margin: 10px 20px;
+  padding-top: 80px;
+}
+.testimonial__footer p2 {
+  color: #c3cfe2;
+  font-size: 1.5rem;
+}
